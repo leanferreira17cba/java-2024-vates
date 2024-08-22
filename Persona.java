@@ -1,7 +1,7 @@
 package co;
 
 public class Persona {
-    public byte edad = 67;
+    private byte edad = 67;
     public short anioDeNacimiento = 1980;
     public int dni = 30000000;
     public long coordenadaX = 453456L;
@@ -11,5 +11,19 @@ public class Persona {
     public char sexo = 'M';
     public boolean estaVivo = true;
 
+    public String nombre = "Marcos"; // new String("Marcos");
+
+    public void setEdad(byte edad) {
+        this.edad = edad;
+    }
+
+    public byte getEdad() {
+        return edad;
+    }
+
     public Persona(){}
+
+    public Persona(byte edad) {
+        this.edad = edad;
+    }
 }
