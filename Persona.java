@@ -26,4 +26,15 @@ public class Persona {
     public Persona(byte edad) {
         this.edad = edad;
     }
+
+    public void alterarNombre(Persona candidato) {
+        candidato.nombre += "1236%&&&&((hh";
+    }
+
+    public Integer sumarMasEdad(int edadASumar) {
+        edadASumar += 50;
+
+        return edadASumar;
+    }
+
 }
