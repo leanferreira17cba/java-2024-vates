@@ -39,7 +39,7 @@ public class Main {
 
         String respuesta = (true && 4 + 7 > 6 - 7 == false || false) ? "A" : "B" ;
 
-        System.out.println(respuesta);
+        //System.out.println(respuesta);
 
         int r = 1;
 
@@ -67,6 +67,55 @@ public class Main {
         //System.out.println(!s);
 
         int l = 4, k = 7, m = 8;
+
+        /*Persona b = new Persona();
+
+        System.out.println(b);
+
+        Persona c = null;
+
+        System.out.println(c);
+
+        Persona o = b;
+
+        System.out.println(o);*/
+
+        // (Condicion booleana) ? respuesta A (siempre true) : respuesta B (siempre false);
+
+        // String ar = "ABC"; // new String("ABC");
+
+        //System.out.println((o == b) ? "Si, apunta a la misma ubicacion de memoria" : "No apunta a la misma ubicacion de memoria");
+
+        String saludo = "Hola"; // saludo almacena la ubicacion en memoria de la instancia de la clase String que tiene el valor "hola" representado internamente
+        //System.out.println(saludo);
+
+        String despedida = saludo;
+        despedida = "bla";
+
+        /*System.out.println(System.identityHashCode(saludo));
+        System.out.println(System.identityHashCode(despedida));*/
+
+        Persona pedro = new Persona();
+
+        // obj
+        Persona ana = new Persona();
+        ana.nombre = "Ana";
+        pedro.alterarNombre(ana);
+        System.out.println(ana.nombre);
+
+
+        // primitivo
+        int e = 7;
+        e = ana.sumarMasEdad(e);
+        System.out.println(e);
+
+        // Wrappers
+        int u = 7;
+
+        Integer v = new Integer(7);
+
+        char h = '%';
+        Character ch = new Character('y');
 
     }
 }
